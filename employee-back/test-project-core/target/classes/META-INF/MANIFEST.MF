@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+Date: 1908081016
+Implementation-Title: ba.com.zira.stc.test-project-core
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Praxa4
+Implementation-Vendor-Id: ba.com.zira.stc
+Class-Path: test-project-api-0.0.1-SNAPSHOT.jar hibernate-entitymanage
+ r-5.3.3.Final.jar jboss-logging-3.3.2.Final.jar dom4j-1.6.1.jar hiber
+ nate-commons-annotations-5.0.4.Final.jar javax.persistence-api-2.2.ja
+ r byte-buddy-1.7.11.jar jboss-transaction-api_1.2_spec-1.1.1.Final.ja
+ r hibernate-java8-5.3.3.Final.jar zira-commons-model-2.0.0-SNAPSHOT.j
+ ar jackson-databind-2.9.8.jar jackson-annotations-2.9.0.jar jackson-c
+ ore-2.9.8.jar jackson-datatype-jsr310-2.9.6.jar postgresql-42.2.5.jar
+  test-project-dao-0.0.1-SNAPSHOT.jar HikariCP-3.2.0.jar zira-commons-
+ 2.0.0-SNAPSHOT.jar hibernate-core-5.3.3.Final.jar javassist-3.23.1-GA
+ .jar antlr-2.7.7.jar jandex-2.0.5.Final.jar classmate-1.3.4.jar javax
+ .activation-api-1.2.0.jar spring-orm-5.0.13.RELEASE.jar spring-beans-
+ 5.0.13.RELEASE.jar spring-jdbc-5.0.13.RELEASE.jar spring-tx-5.0.13.RE
+ LEASE.jar spring-expression-5.0.13.RELEASE.jar spring-security-core-5
+ .0.12.RELEASE.jar spring-aop-5.0.13.RELEASE.jar spring-context-5.0.13
+ .RELEASE.jar commons-configuration-1.10.jar commons-lang-2.6.jar comm
+ ons-logging-1.1.1.jar commons-beanutils-1.9.3.jar commons-collections
+ -3.2.2.jar slf4j-api-1.7.25.jar aspectjweaver-1.8.14.jar spring-boot-
+ starter-web-2.0.9.RELEASE.jar spring-boot-starter-json-2.0.9.RELEASE.
+ jar jackson-datatype-jdk8-2.9.8.jar jackson-module-parameter-names-2.
+ 9.8.jar spring-boot-starter-tomcat-2.0.9.RELEASE.jar tomcat-embed-cor
+ e-8.5.39.jar tomcat-embed-el-8.5.39.jar tomcat-embed-websocket-8.5.39
+ .jar hibernate-validator-6.0.16.Final.jar validation-api-2.0.1.Final.
+ jar spring-web-5.0.13.RELEASE.jar spring-webmvc-5.0.13.RELEASE.jar sp
+ ring-cloud-commons-2.0.0.RELEASE.jar spring-security-crypto-5.0.12.RE
+ LEASE.jar commons-collections4-4.2.jar commons-jxpath-1.3.jar httpcli
+ ent-4.5.8.jar httpcore-4.4.11.jar commons-codec-1.11.jar spring-core-
+ 5.0.13.RELEASE.jar spring-jcl-5.0.13.RELEASE.jar spring-boot-starter-
+ 2.0.9.RELEASE.jar spring-boot-2.0.9.RELEASE.jar spring-boot-autoconfi
+ gure-2.0.9.RELEASE.jar spring-boot-starter-logging-2.0.9.RELEASE.jar 
+ logback-classic-1.2.3.jar logback-core-1.2.3.jar log4j-to-slf4j-2.10.
+ 0.jar log4j-api-2.10.0.jar jul-to-slf4j-1.7.26.jar javax.annotation-a
+ pi-1.3.2.jar snakeyaml-1.19.jar mapstruct-jdk8-1.2.0.Final.jar
+Implementation-Vendor: ZIRA Ltd.
+Revision: 
+Implementation-Build: 1908081016.${git.commitsCount}.${git.shortRevisi
+ on}
+Build-Jdk: 1.8.0_211
+Created-By: Maven Integration for Eclipse
+Implementation-URL: svn://svn.zira/n2b/maven-settings/trunk/maven-proj
+ ect/test-project/test-project-core
+

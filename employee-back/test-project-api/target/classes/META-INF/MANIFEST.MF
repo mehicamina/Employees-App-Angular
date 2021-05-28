@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Date: 1908081016
+Implementation-Title: ba.com.zira.stc.test-project-api
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Praxa4
+Implementation-Vendor-Id: ba.com.zira.stc
+Class-Path: hibernate-entitymanager-5.3.3.Final.jar jboss-logging-3.3.
+ 2.Final.jar hibernate-core-5.3.3.Final.jar javassist-3.23.1-GA.jar an
+ tlr-2.7.7.jar jandex-2.0.5.Final.jar classmate-1.3.4.jar javax.activa
+ tion-api-1.2.0.jar dom4j-1.6.1.jar hibernate-commons-annotations-5.0.
+ 4.Final.jar javax.persistence-api-2.2.jar byte-buddy-1.7.11.jar jboss
+ -transaction-api_1.2_spec-1.1.1.Final.jar hibernate-java8-5.3.3.Final
+ .jar zira-commons-model-2.0.0-SNAPSHOT.jar jackson-databind-2.9.8.jar
+  jackson-annotations-2.9.0.jar jackson-core-2.9.8.jar jackson-datatyp
+ e-jsr310-2.9.6.jar postgresql-42.2.5.jar
+Implementation-Vendor: ZIRA Ltd.
+Revision: 
+Implementation-Build: 1908081016.${git.commitsCount}.${git.shortRevisi
+ on}
+Build-Jdk: 1.8.0_211
+Created-By: Maven Integration for Eclipse
+Implementation-URL: svn://svn.zira/n2b/maven-settings/trunk/maven-proj
+ ect/test-project/test-project-api
+
