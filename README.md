@@ -1,5 +1,5 @@
 # Employees-App-Angular
-Web Application using Angular built at internship.
+Web Application using Angular built as an internship project.
 
 ## Technologies
     - Bootstrap 3
