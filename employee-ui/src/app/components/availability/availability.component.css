@@ -1,0 +1,35 @@
+
+.container{
+    width: 70%;
+}
+button{
+    margin-right: 1em;
+    background-color: #035CA0;
+}
+input{
+    border-radius: 4px;
+    height: 35px;
+    border: 1px solid rgb(151, 150, 150);
+}
+li{
+    list-style: none;
+    font: 18px;
+}
+ul{
+    padding: 3px 0;
+}
+
+.search-underline {
+    text-decoration: underline;
+    color: #f24c6b;
+}
+
+#cardi{
+    padding-top: 8%;
+}
+i{
+    color: white;
+}
+h1{
+    padding-left: 4%;
+}

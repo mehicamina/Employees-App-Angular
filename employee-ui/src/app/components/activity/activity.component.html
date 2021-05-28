@@ -1,0 +1,111 @@
+<div class="main">
+    <h1>Activity</h1>
+    <hr>
+    <div class="icons d-flex flex-row-reverse py-2 px-1">
+        <button type="button" (click)="showDialogDelete()" class="btn btn-dark" [disabled]='selectedRow'>
+            <i class="fas fa-trash"></i>
+        </button>
+        <button type="button" (click)="showDialog('Edit')" title="Edit activity" class="btn btn-dark"
+            [disabled]='selectedRow'>
+            <i class="far fa-edit"></i>
+        </button>
+        <button type="button" (click)="showDialog('Create')" title="Add activity" class="btn btn-dark">
+            <i class="fa fa-plus"></i>
+        </button>
+    </div>
+
+    <p-dialog header="{{option}} activity" [modal]="true" [responsive]="true" [(visible)]="display"
+        [style]="{'min-width': '700px'}" [contentStyle]="{'min-height': '600px'}"
+        [contentStyle]="{'overflow': 'visible'}">
+        <div class="pop">
+            <h2 *ngIf="option=='Create'">Enter new activity information</h2>
+            <h2 *ngIf="option=='Edit'">Edit information for existing activity</h2>
+            <div class="row py-3 pt-3">
+
+                <div class="col">
+                    <label for="nameSearch">Name</label>
+                    <input type="text" class="form-control" id="NameSearch" placeholder="Name"
+                        [(ngModel)]="activity.name">
+                    <div *ngIf="pressed && !activity.name" class="alert alert-danger mt-3">
+                        First name is required.
+                    </div>
+                </div>
+
+                <div class="col">
+                    <label for="snameSearch">Short Name</label>
+                    <input type="text" class="form-control" id="sNameSearch" placeholder="Short Name"
+                        [(ngModel)]="activity.shortName">
+
+                    <div *ngIf="pressed && !activity.shortName" class="alert alert-danger mt-3">
+                        Short name is required.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row py-2 pt-3">
+                <div class="col">
+                    <label for="codeSearch">Code</label>
+                    <input type="text" class="form-control" id="codeSearch" placeholder="Code"
+                        [(ngModel)]="activity.code" required [disabled]="this.option==='Edit'">
+
+                    <div class="col" *ngIf="pressed && !activity.code" class="alert alert-danger mt-3">
+                        Activity code is required.
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row py-2 pt-3">
+                <div class="col">
+                    <label for="typedescription">Type Search</label>
+                    <select for="typedescription" type="text" class="form-control" placeholder="Type"
+                        [(ngModel)]="activity.type">
+                        <option *ngFor="let item of typeT" [value]="item.code">{{item.name}}</option>
+                    </select>
+                    <div class="col" *ngIf="pressed && !activity.type" class="alert alert-danger mt-3">
+                        Type is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" class="py-1">
+                <label for="descriptionSearch">Description</label>
+                <input type="text" class="form-control" id="descriptionSearch" placeholder="Description"
+                    [(ngModel)]="activity.description">
+            </div>
+
+            <div class="text-right">
+                <div *ngIf="option=='Create'" class="pt-4">
+                    <button type="button" class="btn btn-dark" (click)="createActivity()" title="Add">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+                <div *ngIf="option=='Edit'" class="pt-4">
+                    <button type="button" class="btn btn-dark" (click)="editActivity()" title="Edit"><i
+                            class="fa fa-pencil"></i></button>
+                </div>
+            </div>
+        </div>
+    </p-dialog>
+
+
+    <p-dialog header="Delete activity" [modal]="true" [responsive]="true" [(visible)]="displayDelete"
+        [style]="{width: '700px'}" [contentStyle]="{'overflow': 'visible'}">
+        <div class="pop">
+            <h3>Delete the selected activity</h3>
+            <h6>Are you sure you want to delete this activity?</h6>
+            <div class="text-right">
+                <button type="button" (click)="deleteActivity()" class="btn btn-dark">Confirm</button>
+                <button type="button" (click)="cancle()" class="btn btn-dark">Cancel</button>
+            </div>
+        </div>
+    </p-dialog>
+
+
+    <ag-grid-angular class="ag-theme-balham-dark" [rowData]="rowData" [columnDefs]="columnDefs" [floatingFilter]="true"
+        [rowDeselection]="true" [rowSelection]="rowSelection" (selectionChanged)="onSelectionChanged($event)"
+        (gridReady)="onGridReady($event)">
+    </ag-grid-angular>
+</div>

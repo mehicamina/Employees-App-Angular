@@ -1,0 +1,30 @@
+.form{
+    display: inline-block;
+    margin-left: 3%
+}
+button{
+    margin-right: 1em;
+    margin-left: 1em;
+    background-color: #035CA0;
+}
+h1{
+    padding: 1% 0 1% 1%;
+    margin: 0;
+}
+input{
+    border-radius: 4px;
+    height: 35px;
+    border: 1px solid rgb(151, 150, 150);
+}
+.collaps{
+   float: right;
+   clear: right;
+   background-color: transparent;
+   border-color: transparent;
+   color: #035CA0
+}
+#jobTitleDrop{
+    border-radius: 4px;
+    height: 35px;
+    border: 1px solid rgb(151, 150, 150);
+}

@@ -1,0 +1,47 @@
+<h1>
+  Availability
+</h1>
+<hr>
+<div class="row">
+  <div class="col-9">
+    <div class="container" id="calendar">
+      <full-calendar defaultView="dayGridMonth" [plugins]="calendarPlugins" [selectable]="true"
+        (dateClick)="handleDateClick($event)" handleWindowResize="true">
+      </full-calendar>
+    </div>
+  </div>
+  <div id="cardi" class="col-3">
+    <div class="card" style="width: 22rem;">
+      <div class="card-body">
+        <h5 class="card-title">Date : {{dateForCard}}</h5>
+        <div id="searchBar" *ngIf="showSearch">
+          <p>Search</p>
+          <input type="search" placeholder="Enter name" id="box" (keyup)="onKey($event)">
+        </div>
+        <p>{{values}}</p>
+        <hr>
+        <div class="card-text">
+          <ul class="list-unstyled">
+            <li class="media" *ngFor="let a of rowData; let i = index">
+              <div class="media-body">
+                <h5 class="mt-0 mb-2">
+                  <button type="button" class="btn btn-dark" (click)="search('a'+i); odabranAC(a)"
+                    data-toggle="collapse">
+                    <i class="fa fa-arrow-right"></i>
+                  </button>{{a}}</h5>
+                <div id="b{{i}}" class="employees" class="text-center">
+                  <!-- style="display:none;" -->
+                  <ul class="list-unstyled">
+                    <li id="c{{i}}" *ngFor="let a of datasForCalendar; let i = index">
+                      <p [ngClass]="{'search-underline':a.selected}">{{a.firstName}} {{a.lastName}}</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,146 @@
+<div>
+    <div class="icons d-flex flex-row-reverse py-2 px-1">
+        <button type="button" (click)="showDialogDelete()" class="btn btn-dark" [disabled]='selectedRow'>
+            <i class="fa fa-user-times"></i>
+        </button>
+        <button type="button" (click)="showDialog('Edit')" title="Edit an employee" class="btn btn-dark"
+            [disabled]='selectedRow'>
+            <i class="fas fa-user-edit"></i>
+        </button>
+        <button type="button" (click)="showDialog('Create')" title="Add an employee" class="btn btn-dark">
+            <i class="fa fa-user-plus"></i>
+        </button>
+    </div>
+    <p-dialog header="{{option}} an employee" [modal]="true" [responsive]="true" [(visible)]="display"
+        [style]="{'min-width': '700px'}" [contentStyle]="{'min-height': '600px'}"
+        [contentStyle]="{'overflow': 'visible'}">
+        <div class="pop">
+            <h2 *ngIf="option=='Create'">Enter information about the new employee</h2>
+            <h2 *ngIf="option=='Edit'">Edit information about employee</h2>
+            <div class="row py-3">
+                <div class="col">
+                    <label for="firstNameSearch">First Name</label>
+                    <input type="text" class="form-control" id="firstNameSearch" placeholder="First Name"
+                        [(ngModel)]="employee.firstName" required>
+                    <div *ngIf="pressed && !employee.firstName" class="alert alert-danger mt-3">
+                        First name is required.
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="lastNameSearch">Last Name</label>
+                    <input type="text" class="form-control" id="lastNameSearch" placeholder="Last Name"
+                        [(ngModel)]="employee.lastName" required>
+                    <div *ngIf="pressed && !employee.lastName" class="alert alert-danger mt-3">
+                        Last name is required.
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+
+                <div class="col-4">
+                    <label for="phoneNumberSearch">Phone Number</label>
+                    <input type="text" class="form-control" id="phfoneNumberSearch" placeholder="Phone Number"
+                        [(ngModel)]="employee.phoneNumber">
+                </div>
+                <div class="col-5">
+                    <label for="emailSearch">Email</label>
+                    <input type="text" class="form-control" id="emailSearch" placeholder="Email"
+                        [(ngModel)]="employee.email">
+                </div>
+                <div class="col">
+                    <label for="genderSearch">Gender</label>
+                    <div>
+                        <select class="form-control" [(ngModel)]="employee.gender">
+                            <option *ngFor="let item of genderT" [value]="item.code">{{item.name}}</option>
+                        </select>
+                    </div>
+                    <div *ngIf="pressed && !employee.gender " class="alert alert-danger mt-3">
+                        Gender is required.
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row py-3">
+                <div class="col-6">
+                    <label for="birthDateSearch">Birth Date</label>
+                    <input type="date" class="form-control" id="birthDateSearch" placeholder="Birth Date"
+                        [(ngModel)]="employee.birtDate" required>
+                    <div *ngIf="pressed && !employee.birtDate" class="alert alert-danger mt-3">
+                        Date of birth is required.
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="hireDateSearch">Hire Date</label>
+                    <input type="date" class="form-control" id="hireDateSearch" placeholder="Hire Date"
+                        [(ngModel)]="employee.hireDate" required>
+                    <div *ngIf="pressed && !employee.hireDate" class="alert alert-danger mt-3">
+                        Hire date is required.
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-4"> <label>Job Title</label>
+                    <div>
+                        <select class="form-control" [(ngModel)]="employee.jobTitleCode">
+                            <option *ngFor="let item of jobT" [value]="item.code">{{item.name}}</option>
+                        </select>
+                    </div>
+                    <div *ngIf="pressed && !employee.jobTitleCode" class="alert alert-danger mt-3">
+                        Job title is required.
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label>Activity Code</label>
+                    <div>
+                        <select class="form-control" [(ngModel)]="employee.activityCode">
+                            <option *ngFor="let item of activity" [value]="item.code">{{item.name}}</option>
+                        </select>
+                        <div *ngIf="pressed && !employee.activityCode" class="alert alert-danger mt-3">
+                            Activity code is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label>Department Code</label>
+                    <div>
+                        <select class="form-control" [(ngModel)]="employee.departmentCode">
+                            <option *ngFor="let item of department" [value]="item.code">{{item.name}}</option>
+                        </select>
+                    </div>
+                    <div *ngIf="pressed && !employee.departmentCode" class="alert alert-danger mt-3">
+                        Department code is required.
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div *ngIf="option=='Create'" class="pt-4">
+                    <button type="button" class="btn btn-dark" (click)="newEmployee()" title="Add">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+                <div *ngIf="option=='Edit'" class="pt-4">
+                    <button type="button" class="btn btn-dark" (click)="editEmployee()" title="Edit"><i
+                            class="fa fa-pencil"></i></button>
+                </div>
+            </div>
+        </div>
+    </p-dialog>
+    <p-dialog header="Delete an employee" [modal]="true" [responsive]="true" [(visible)]="displayDelete"
+        [style]="{width: '700px'}" [contentStyle]="{'overflow': 'visible'}">
+        <div class="pop">
+            <h3>Delete the selected employee</h3>
+            <h6>Are you sure you want to delete this employee?</h6>
+            <div class="text-right">
+                <button type="button" (click)="deleteEmploye()" class="btn btn-dark">Confirm</button>
+                <button type="button" (click)="cancle()" class="btn btn-dark">Cancel</button>
+            </div>
+        </div>
+    </p-dialog>
+
+    <ag-grid-angular class="ag-theme-balham-dark" [rowData]="rowData" [columnDefs]="columnDefs" [floatingFilter]="true"
+        [rowDeselection]="true" [rowSelection]="rowSelection" (selectionChanged)="onSelectionChanged($event)"
+        (gridReady)="onGridReady($event)">
+    </ag-grid-angular>
+
+    
+</div>

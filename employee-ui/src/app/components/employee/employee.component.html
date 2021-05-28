@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="nav flex-column nav-pills icons ml-4 mt-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <button id="employeeAdmin" class="rounded-left pl-3" (click)="openRegistries('employeeAdmin')" title="Job Title">
+      <i id="usercod-icon" class="fas fa-user-cog"></i>
+    </button>
+    <button id="employeeProject" class="rounded-left pl-3" (click)="openRegistries('employeeProject')" title="Activity">
+      <i id="briefcase-icon" class="fa fa-briefcase"></i>
+    </button>
+</div>
+<div class="col">
+  <div class="tab-content">
+    <div class="employee" *ngIf="employeeAdmin">
+      <app-search></app-search>
+      <app-table></app-table>
+    </div>
+    <app-employee-project *ngIf="employeeProject"></app-employee-project>
+  </div>
+</div>
+</div>

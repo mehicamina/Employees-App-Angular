@@ -1,0 +1,9 @@
+img{
+    max-height: 500px;
+}
+.coll{
+    margin: auto;
+    display: block;
+    width: 50%;
+    padding-top: 12em; 
+}

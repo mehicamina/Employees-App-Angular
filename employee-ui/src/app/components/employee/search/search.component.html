@@ -1,0 +1,32 @@
+<div class="main">
+  <h1>
+    Employee Admin
+    <button class="collaps" (click)="collaps()" data-toggle="collapse">
+      <i *ngIf="show" class="fa fa-angle-up fa-2x"></i>
+      <i *ngIf="!show" class="fa fa-angle-down fa-2x"></i>
+    </button>
+  </h1>
+  <div *ngIf="show" class="py-2">
+    <div class="form">
+      <p>First Name</p><input type="text" (keydown.enter)="submit()" [(ngModel)]="firstName">
+    </div>
+    <div class="form">
+      <p>Last Name</p><input type="text" (keydown.enter)="submit()" [(ngModel)]="lastName">
+    </div>
+    <div class="form">
+      <p>Phone Number</p><input type="text" (keydown.enter)="submit()" pInputText [(ngModel)]="phoneNumber" />
+    </div>
+    <div class="form">
+      <p>Hire Date</p><input type="date" [(ngModel)]="dateValue" class="form-control">
+    </div>
+    <div class="form">
+      <p>Job Title</p>
+      <select (keydown.enter)="submit()" [(ngModel)]="jobTitle.code" id="jobTitleDrop">
+        <option *ngFor="let m of jobT" value="{{m.code}}">{{m.name}}</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-dark" (click)="submit()">GO</button>
+    <button type="button" class="btn btn-dark" (click)="clear()">Clear</button>
+  </div>
+  <hr>
+</div>

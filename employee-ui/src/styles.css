@@ -1,0 +1,9 @@
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham-dark.css";
+@import "~ag-grid-community/dist/styles/ag-theme-dark.css";
+
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+
+

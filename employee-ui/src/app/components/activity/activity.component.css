@@ -1,0 +1,19 @@
+ag-grid-angular{
+    max-width: 92vw;
+    height: 60vh;
+    margin: 2% 2% 3% 3%;
+    /* color: #f3244a; */
+}
+button{
+    margin-right: 1em;
+    margin-bottom: 1em;
+    background-color: #035CA0;
+}
+i{
+    color: white;
+}
+
+h1{
+    padding: 2% 0 1% 2%;
+    margin: 0;
+}
