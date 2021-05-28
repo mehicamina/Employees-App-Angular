@@ -1,0 +1,39 @@
+[
+    {
+        "lable": "employee",
+        "name":"Employee",
+        "icon": "fa fa-id-card-o ",
+        "disabled": false
+    },
+    {
+        "lable": "project",
+        "name": "Project",
+        "icon": "fa fa-handshake-o",
+        "disabled": false
+    },
+    {
+        "lable": "statistic",
+        "name": "Statistic",
+        "icon": "fa fa-line-chart ",
+        "disabled": false
+    },
+    {
+        "lable": "availability",
+        "name": "Availability",
+        "icon": "fa fa-clock-o",
+        "disabled": false
+    },
+    {
+        "lable": "registries",
+        "name": "Registries",
+        "icon": "fa fa-database",
+        "disabled": false
+    },
+    {
+        "lable": "employee_project",
+        "name": "Employee Project",
+        "icon": "fa fa-briefcase",
+        "disabled": true
+    }
+
+]

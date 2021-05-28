@@ -1,0 +1,13 @@
+[
+    {
+        "data": [30, 40, 10, 31,47, 15, 7,5, 6],
+        "label": "Female",
+        "backgroundColor": "#035CA0"
+    },
+    {
+        "data": [28, 48, 40, 19, 86, 27, 90],
+        "label": "Male",
+        "backgroundColor": "#7403a0"
+
+    }
+]
