@@ -12,19 +12,19 @@ Web Application using Angular built at internship.
     
 ## My Tasks
 
-- Make a Menu that builds from the JSON file
-- Test it on different browsers, make it full responsive
-- Create a Home Page
-- Implement the form for Statiscits
-- Create an Employee Review Form and link it to the Menu
-- Make a search form for searching employees
-- Create pop-ups to create, update and delete employees
-- Enable create, update, delete employee and link it with backend services
-- Create client side validation to insert a new employee
-- Implement an API that returns a list of work statuses
-- Implement a component to display a list of work statuses (Availability tab)
-- Enable Client Side Filtering on a component I previously created
-- Create a new Activity page
+- Made a Menu that builds from the JSON file
+- Tested it on different browsers, made it full responsive
+- Created a Home Page
+- Implemented the form for Statiscits
+- Created an Employee Review Form and linked it to the Menu
+- Made a Search Form for searching employees
+- Created pop-ups to Create, Update and Delete employees
+- Enabled create, update, delete employee and linked it with backend services
+- Created client side validation to insert a new employee
+- Implemented an API that returns a list of work statuses
+- Implemented a component to display a list of work statuses (Availability tab)
+- Enabled Client Side Filtering on a component I previously created
+- Created a new Activity page
 
-- Design UI for Login Page
+- Designed UI for Login Page
     
