@@ -23,7 +23,7 @@ Web Application using Angular built as an internship project.
 - Created client side validation to insert a new employee
 - Implemented an API that returns a list of work statuses
 - Implemented a component to display a list of work statuses (Availability tab)
-- Enabled Client Side Filtering on a component I previously created
+- Enabled Client Side Filtering on a component that I had created previously 
 - Created a new Activity page
 
 - Designed UI for Login Page
