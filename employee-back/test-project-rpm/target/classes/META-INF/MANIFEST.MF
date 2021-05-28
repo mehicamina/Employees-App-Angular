@@ -1,0 +1,59 @@
+Manifest-Version: 1.0
+Date: 1908081017
+Implementation-Title: ba.com.zira.stc.test-project-rpm
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Praxa4
+Implementation-Vendor-Id: ba.com.zira.stc
+Class-Path: test-project-service-0.0.1-SNAPSHOT.jar test-project-rest-
+ 0.0.1-SNAPSHOT.jar test-project-api-0.0.1-SNAPSHOT.jar hibernate-enti
+ tymanager-5.3.3.Final.jar dom4j-1.6.1.jar hibernate-commons-annotatio
+ ns-5.0.4.Final.jar javax.persistence-api-2.2.jar byte-buddy-1.7.11.ja
+ r jboss-transaction-api_1.2_spec-1.1.1.Final.jar hibernate-java8-5.3.
+ 3.Final.jar zira-commons-model-2.0.0-SNAPSHOT.jar postgresql-42.2.5.j
+ ar springfox-swagger2-2.9.2.jar swagger-annotations-1.5.20.jar swagge
+ r-models-1.5.20.jar jackson-annotations-2.9.0.jar springfox-spi-2.9.2
+ .jar springfox-core-2.9.2.jar springfox-schema-2.9.2.jar springfox-sw
+ agger-common-2.9.2.jar springfox-spring-web-2.9.2.jar guava-20.0.jar 
+ classmate-1.3.4.jar slf4j-api-1.7.25.jar spring-plugin-core-1.2.0.REL
+ EASE.jar spring-plugin-metadata-1.2.0.RELEASE.jar mapstruct-1.2.0.Fin
+ al.jar springfox-swagger-ui-2.9.2.jar spring-web-5.0.13.RELEASE.jar s
+ pring-beans-5.0.13.RELEASE.jar spring-core-5.0.13.RELEASE.jar spring-
+ jcl-5.0.13.RELEASE.jar test-project-core-0.0.1-SNAPSHOT.jar test-proj
+ ect-dao-0.0.1-SNAPSHOT.jar HikariCP-3.2.0.jar zira-commons-2.0.0-SNAP
+ SHOT.jar hibernate-core-5.3.3.Final.jar javassist-3.23.1-GA.jar antlr
+ -2.7.7.jar jandex-2.0.5.Final.jar javax.activation-api-1.2.0.jar spri
+ ng-orm-5.0.13.RELEASE.jar spring-jdbc-5.0.13.RELEASE.jar spring-tx-5.
+ 0.13.RELEASE.jar spring-expression-5.0.13.RELEASE.jar spring-security
+ -core-5.0.12.RELEASE.jar commons-configuration-1.10.jar commons-lang-
+ 2.6.jar commons-logging-1.1.1.jar commons-beanutils-1.9.3.jar commons
+ -collections-3.2.2.jar aspectjweaver-1.8.14.jar spring-cloud-commons-
+ 2.0.0.RELEASE.jar spring-security-crypto-5.0.12.RELEASE.jar commons-c
+ ollections4-4.2.jar commons-jxpath-1.3.jar httpclient-4.5.8.jar httpc
+ ore-4.4.11.jar commons-codec-1.11.jar mapstruct-jdk8-1.2.0.Final.jar 
+ commons-daemon-1.0.12.jar spring-boot-starter-web-2.0.9.RELEASE.jar s
+ pring-boot-starter-2.0.9.RELEASE.jar spring-boot-2.0.9.RELEASE.jar sp
+ ring-boot-autoconfigure-2.0.9.RELEASE.jar spring-boot-starter-logging
+ -2.0.9.RELEASE.jar logback-classic-1.2.3.jar logback-core-1.2.3.jar l
+ og4j-to-slf4j-2.10.0.jar log4j-api-2.10.0.jar jul-to-slf4j-1.7.26.jar
+  javax.annotation-api-1.3.2.jar snakeyaml-1.19.jar spring-boot-starte
+ r-json-2.0.9.RELEASE.jar jackson-databind-2.9.8.jar jackson-core-2.9.
+ 8.jar jackson-datatype-jdk8-2.9.8.jar jackson-datatype-jsr310-2.9.6.j
+ ar jackson-module-parameter-names-2.9.8.jar spring-boot-starter-tomca
+ t-2.0.9.RELEASE.jar tomcat-embed-core-8.5.39.jar tomcat-embed-el-8.5.
+ 39.jar tomcat-embed-websocket-8.5.39.jar hibernate-validator-6.0.16.F
+ inal.jar validation-api-2.0.1.Final.jar jboss-logging-3.3.2.Final.jar
+  spring-webmvc-5.0.13.RELEASE.jar spring-aop-5.0.13.RELEASE.jar sprin
+ g-context-5.0.13.RELEASE.jar spring-boot-starter-actuator-2.0.9.RELEA
+ SE.jar spring-boot-actuator-autoconfigure-2.0.9.RELEASE.jar spring-bo
+ ot-actuator-2.0.9.RELEASE.jar micrometer-core-1.0.10.jar HdrHistogram
+ -2.1.10.jar LatencyUtils-2.0.3.jar micrometer-registry-prometheus-1.0
+ .10.jar simpleclient_common-0.4.0.jar simpleclient-0.4.0.jar
+Implementation-Vendor: ZIRA Ltd.
+Revision: 
+Implementation-Build: 1908081017.${git.commitsCount}.${git.shortRevisi
+ on}
+Build-Jdk: 1.8.0_211
+Created-By: Maven Integration for Eclipse
+Implementation-URL: svn://svn.zira/n2b/maven-settings/trunk/maven-proj
+ ect/test-project/test-project-rpm
+

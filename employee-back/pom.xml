@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ba.com.zira</groupId>
+		<artifactId>maven-project</artifactId>
+		<version>2.0.0-SNAPSHOT</version>
+		<relativePath/>
+	</parent>
+
+	<groupId>ba.com.zira.stc</groupId>
+	<artifactId>test-project</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>TestProject</name>
+	<description>${project.name}</description>
+
+	<properties>
+		<app.dir>test-project</app.dir>
+		<project.release.version>0.0.1-SNAPSHOT</project.release.version>
+		<!-- Prefix for nexus repository i.e zira to use zira-snapshots or zira-releases -->
+		<distribution.repo.id.prefix>project</distribution.repo.id.prefix>
+	</properties>
+
+  <modules>
+    <module>test-project-api</module>
+    <module>test-project-dao</module>
+    <module>test-project-core</module>
+    <module>test-project-rest</module>
+    <module>test-project-service</module>
+    <module>test-project-rpm</module>
+  </modules>
+</project>
