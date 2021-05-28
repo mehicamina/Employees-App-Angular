@@ -1,0 +1,14 @@
+<div *ngIf="logged" (load)="noBack()">
+  <nav class="nav navbar-light" *ngIf="logged">
+    <a class="pl-0 mr-auto nohover" id="logo" href="http://localhost:4200/">
+      <img src="../../../assets/image/ZIRA Logo V2.svg" width="50" height="40" alt="ZIRA designed photo">
+    </a>
+    <h3 id="currentUser">{{user}}</h3>
+    <div *ngFor="let m of menu" class="px-3">
+      <a class="navbar-text dikone pr-3 pb-3" href="" (click)="logOut(m.icon)">{{m.icon}}</a>
+    </div>
+  </nav>
+  <div>
+    <app-side *ngIf="toggle"></app-side>
+  </div>
+</div>

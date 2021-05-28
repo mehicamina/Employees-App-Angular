@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="nav flex-column nav-pills icons ml-4 mt-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <button id="jobTite" class="rounded-left pl-3" (click)="openRegistries('jobTite')" title="Job Title">
+      <i id="jobT" class="fas fa-user-tag"></i>
+    </button>
+    <button id="activity" class="rounded-left pl-3" (click)="openRegistries('activity')" title="Activity">
+      <i id="act" class="fas fa-file-alt"></i>
+    </button>
+    <button id="department" class="rounded-left pl-3" (click)="openRegistries('department')" title="Department">
+      <i id="dep" class="fas fa-sitemap" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="col">
+    <div class="tab-content">
+      <app-job-title *ngIf="jobtitle"></app-job-title>
+      <app-activity *ngIf="activityC"> </app-activity>
+      <app-department *ngIf="department"> </app-department>
+    </div>
+  </div>
+</div>

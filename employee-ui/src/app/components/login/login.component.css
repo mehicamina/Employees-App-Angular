@@ -1,0 +1,338 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+  
+html, body {
+  height: 100%;
+  width: 80%;
+  overflow: hidden;
+}
+  
+#background{
+  width: 100%; 
+  height: 100vh;
+  margin: 0px!important;
+  margin-top: -50px;
+  padding: 0px; 
+  /* background-image: linear-gradient(to bottom, rgba( 0, 0, 0, 0.6), rgba( 0, 0, 0, 0.6)), url('../../../assets/image/loginnaslov.jpg'); */
+   background-image:  url('../../../assets/image/loginnaslov.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+}
+.login {
+  max-width: 400px;
+  min-height: 500px;
+  margin: 30px auto;
+  margin-left: 65%;
+  background-color: rgba(14, 14, 14, 0.9);
+}
+  
+.login-icon-field {
+  height: 250px;
+}
+  
+.login-icon {
+  margin: 50px 65px;
+}
+  
+.login-form {
+  padding: 8px 20px 20px;
+  height: 120px;
+  width: 100%;
+  font-family: 'Incised';
+}
+
+.username-row {
+  position: relative;
+  height: 40px;
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+}
+  
+.password-row {
+  position: relative;
+  height: 40px;
+  border-bottom: 1px solid;
+}
+  
+.password-icon,
+.user-icon {
+  margin: 5px;
+}
+  
+.password-icon .key-path,
+.user-icon .user-path{
+  fill: rgba(10,10,10,0);
+  stroke: #fff;
+  color: black;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  -webkit-animation: dash 3s .3s linear forwards;
+  animation: dash 3s .3s linear forwards;
+}
+  
+.user-icon .user-path {
+  -webkit-animation: dash 3s .8s linear forwards;
+  animation: dash 3s .8s linear forwards;
+}
+  
+input {
+  position: absolute;
+  width: 195px;
+  height: 30px;
+  margin: 5px 0;
+  background: transparent;
+  border: none;
+}
+  
+input:focus,
+button:focus {
+  outline: none;
+}
+  
+input::-webkit-input-placeholder {
+  color: rgba(255,255,255,.4);
+}
+
+#login{
+  position: relative; 
+  top: 12%;
+}
+  
+input::-moz-placeholder {
+  color: rgba(255,255,255,.4);
+}
+@font-face {
+  font-family: Incised;
+  src: url(../../../assets/fonts/Incised901W03Light.ttf);
+}
+@font-face {
+  font-family: MuseoSans;
+  src: url(../../../assets/fonts/MuseoSans-900.otf);
+}
+  
+.call-to-action {
+  margin: 22px 0;
+  height: 130px;
+  width: 100%;
+  text-align: center;
+  float: right;
+  font-family: 'Incised';
+  letter-spacing: 3px;
+}
+
+.message{
+  color: #fa113d;
+}
+  
+button {
+  display: block;
+  width: 240px;
+  height: 40px;
+  padding: 0;
+  margin: 10px 20px 10px;
+  font-weight: 700;
+  color: black;
+  background-color: linear-gradient(to left, rgba(226,226,226,1), rgba(177, 177, 177, 0.9));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );;
+  border: none;
+  border-radius: 20px;
+  transition: background-color .10s ease-in-out;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+  
+button:hover {
+  background-color: #F5F2EE;
+}
+  
+button:active {
+  background-color: #F5F2EE;
+}
+  
+p {
+  display: inline-block;
+  width: 200px;
+  margin: 0 40px;
+  font-size: .8rem;
+  color: rgba(255,255,255,.4);
+}
+  
+p a {
+  color: #fff;
+}
+  
+label,
+p a:hover {
+  -webkit-cursor: pointer;
+  cursor: pointer;
+}
+  
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+  
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#username_input, #password_input{
+  background-color: transparent;
+  text-align: center;
+  color: #fff;   
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+ 
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;  
+}
+ 
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;  
+}
+ 
+:-ms-input-placeholder {  
+  text-align: center; 
+}
+
+.lock-top{
+  fill: none;
+  stroke: #02ac1e;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 300;
+  stroke-dashoffset: -30;
+  transition: all 300ms ease-out;
+}
+
+.lock-top.loaded {
+  stroke-dashoffset: 0;
+  stroke: #fa113d
+}
+
+.lock-top.loaded ~ .lock-body {
+  fill: #fa113d;
+}
+
+.lock-top.loading {
+  stroke: #000;
+  opacity: 0.3;
+}
+  
+.lock-outline{
+  fill: #fff;
+
+}
+.lock-body {
+  fill: #02ac1e;
+  opacity: 1;
+  transition: all 300ms ease-out;
+}
+.lock-body.loading{
+  fill: #000 !important;
+  opacity: 0.3;
+}
+  
+.lock-spinner {
+  fill: none;
+  stroke: #000;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.lock-spinner.loading{
+  opacity: 1;
+}
+
+#userIcon{
+  position: relative;
+  top: 90px;
+  left: 37%;
+}
+
+#login-buttonDis{
+  background-color: rgba(128, 128, 128, 0.301);
+  color: grey;
+}
+  
+.shake-horizontal {
+	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+
+ @-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}

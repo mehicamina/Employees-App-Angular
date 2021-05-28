@@ -1,0 +1,28 @@
+<div class="main">
+  <h1>Statistics</h1>
+  <hr>
+  <div class="graphs">
+    <!-- Bar -->
+    <h2 class="text-center">Shows the relationship between men and women over the years</h2>
+    
+    <div class="row justify-content-center">
+      <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+        [legend]="barChartLegend" [chartType]="barChartType"></canvas>
+    </div>
+    <!-- doughnut -->
+    <h2 class="text-center"> Number of employees per title </h2>
+    
+    <div class="row justify-content-center">
+      <canvas baseChart [datasets]="doughnutChartData" [labels]="doughnutChartLabels"
+        [chartType]="doughnutChartType"></canvas>
+    </div>
+    <!-- Pie -->
+    <h2 class="text-center">Number of employees per location</h2>
+    
+    <div class="row justify-content-center">
+      <canvas baseChart [datasets]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+        [legend]="pieChartLegend">
+      </canvas>
+    </div>
+  </div>
+</div>

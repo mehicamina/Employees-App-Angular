@@ -1,0 +1,8 @@
+<div class="row">
+    <app-tree class="col" (someEvent)="collaps($event)"></app-tree>
+    <app-employee-info *ngIf="show" class="col-4"></app-employee-info>
+    <button class="collaps" (click)="collaps()" id="triger" data-toggle="collapse">
+        <i *ngIf="show" class="fa fa-angle-right fa-2x"></i>
+        <i *ngIf="!show" class="fa fa-angle-left fa-2x"></i>
+    </button>
+</div>

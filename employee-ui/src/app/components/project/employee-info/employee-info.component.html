@@ -1,0 +1,96 @@
+<div class="d-flex justify-content-end pt-3">
+    <div class="w3-card-4" style="width:100%" id="pozadina">
+        <header class="w3-container ">
+            <div class="row">
+                <h3 id="picker">Edit card </h3>
+                <div>
+                    <input type="color" style='opacity:0;height:44px;position:absolute' id="pokusaj" [(ngModel)]="test"
+                        (change)="changeColor()" />
+                    <button id="colorChange" ng-app>
+                        <img class="picturepicker" src="https://img.icons8.com/color/48/000000/rgb-circle-1.png">
+                    </button>
+                </div>
+            </div>
+        </header>
+        <hr>
+        <div class="w3-container">
+            <h3>Image</h3>
+            <span class="dot">
+                <img *ngIf="clicked" src="{{message.image}}">
+            </span>
+            <hr>
+            <div class="row py-3">
+                <div class="col">
+                    <label>First Name</label>
+                    <input id="picker1" type="text" class="form-control" [(ngModel)]="employee.firstName" readonly>
+
+                </div>
+                <div class="col">
+                    <label>Last Name</label>
+                    <input id="picker2" type="text" class="form-control" [(ngModel)]="employee.lastName" readonly>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row py-3">
+
+                <div class="col-4">
+                    <label>Email</label>
+                    <input id="picker4" type="text" class="form-control" [(ngModel)]="employee.email" readonly>
+
+
+                </div>
+                <div class="col-5">
+                    <label>Phone Number</label>
+                    <input id="picker3" type="text" class="form-control" [(ngModel)]="employee.phoneNumber" readonly>
+                </div>
+                <div class="col">
+                    <label>Gender</label>
+                    <input type="text" id="picker5" class="form-control" [(ngModel)]="employee.gender" readonly>
+
+                </div>
+            </div>
+
+
+
+
+            <hr>
+            <div class="row py-3">
+                <div class="col-6">
+                    <label>Birth Date</label>
+                    <input id="picker6" type="text" class="form-control" [(ngModel)]="employee.birtDate" readonly>
+
+                </div>
+                <div class="col-6">
+                    <label>Hire Date</label>
+                    <input id="picker7" type="text" class="form-control" [(ngModel)]="employee.hireDate" readonly>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row py-3">
+                <div class="col-4">
+                    <label>Job Title</label>
+                    <input id="picker8" type="text" class="form-control" [(ngModel)]="employee.jobTitleCode" readonly>
+                </div>
+                <div class="col-4">
+                    <label>Activity</label>
+                    <div>
+                        <input id="picker10" type="text" class="form-control" [(ngModel)]="employee.activityCode"
+                            readonly>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label>Department</label>
+
+                    <input id="picker9" type="text" class="form-control" [(ngModel)]="employee.departmentCode" readonly>
+
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+</div>

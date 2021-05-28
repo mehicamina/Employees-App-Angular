@@ -1,0 +1,14 @@
+<div>
+  <ul class="nav nav-tabs">
+    <li *ngFor="let p of activitys">
+      <button class="nav-link active {{projectShear === p.code?'active-tab':''}}"
+        *ngIf="p.type=='PROJECT' || p.type=='Project'" (click)="showGraph(p.code)"
+        aria-pressed="true" title="{{p.name}}">{{p.code}}</button>
+    </li>
+  </ul>
+
+  <div id="myDiagramDiv" style="background-color: #ffffff; height: 850px ; ">
+  </div>
+
+
+</div>

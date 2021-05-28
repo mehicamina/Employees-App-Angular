@@ -1,0 +1,53 @@
+
+   .dot {
+    height: 100px;
+    width: 100px;
+    background-color:rgba(152, 162, 170, 0.151) !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+
+  body{ padding:50px;}
+  #triger{
+    position: absolute;
+    z-index: 1000;
+  left: 560px;
+  
+  }
+  #pokusaj{
+    background-color:white;
+  }
+.w3-card-4{
+  box-shadow: 0 4px 10px 0 rgba(3, 92, 160, 0.158), 0 4px 20px 0 rgba(3, 92, 160, 0.158) !important;
+}
+
+ input[type="text"], textarea {
+
+  background-color :  rgba(152, 162, 170, 0.151) !important;
+
+}
+img{
+  height: 100px;
+  width: 100px;  
+  border-radius: 50%;
+}
+button{
+  margin: 1.3em 1em 1em 1em ;
+  background-color: transparent;
+  border-color:transparent; 
+}
+h3{
+  margin-left: 1em;
+  margin-top: 1em;
+}
+#pokusaj{
+  width: 60px;
+  margin: 1.4em 1em 0 0.8em;
+}
+.picturepicker{
+  
+  height: 40px;
+  width: 40px;
+}

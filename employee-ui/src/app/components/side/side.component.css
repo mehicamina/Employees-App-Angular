@@ -1,0 +1,30 @@
+nav{
+  float: left;
+  clear: left;
+  height: calc(100vh - 45px);;
+  background-color: #003f68;
+}
+.center{
+  padding-top: 40vh;
+}
+#head{
+  background: rgb(61, 0, 105);
+}
+a:hover{
+  background-color:  white;
+}
+a:hover i{
+  color: #003f68;
+}
+img{
+  padding-left: 2%;
+}
+i{
+  color: white;
+}
+.selected{
+  background-color: white;
+}
+.selected i{
+  color: #003f68;
+}

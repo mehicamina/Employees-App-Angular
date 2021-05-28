@@ -1,0 +1,19 @@
+ul{
+    margin-top: 10px;
+}
+button{
+    background: transparent;
+}
+
+.active-tab {
+    background-color: #035CA0 !important;
+    color: white !important;
+}
+@font-face {
+    font-family: Incised;
+    src: url(../../../../assets/fonts/Incised901W03Light.ttf);
+}
+@font-face {
+    font-family: MuseoSans;
+    src: url(../../../../assets/fonts/MuseoSans-900.otf);
+  }

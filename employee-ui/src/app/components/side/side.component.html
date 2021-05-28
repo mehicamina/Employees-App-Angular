@@ -1,0 +1,9 @@
+<nav>
+    <div class="center">
+        <div *ngFor="let m of menu">
+            <a *ngIf="m.disabled==false" class="nav-item nav-link {{selected === m.lable?'selected':''}}" routerLink="/{{m.lable}}" title="{{m.name}}" (click)="setClass(m.lable)">
+                <i  class="{{m.icon}}"></i>
+            </a>
+        </div>
+    </div>
+</nav>
